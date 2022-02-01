@@ -31,3 +31,36 @@
 .chamada__botao {
   width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .chamada__texto {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .chamada {
+    background-image: url('../img/bg-intro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .chamada__titulo {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .chamada__botao {
+    transition: 250ms;
+    font-weight: 600;
+  }
+
+  .chamada__botao:hover {
+    background-color: var(--branco);
+    color: var(--cinza-escuro);
+    border-color: var(--cinza-escuro);
+  }
+}

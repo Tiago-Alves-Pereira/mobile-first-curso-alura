@@ -32,3 +32,35 @@
 
   margin-bottom: 1rem;
 }
+
+.sobre__imagem {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sobre__conteudo {
+    width: 60%;
+    margin-right: 3rem;
+  }
+
+  .sobre__titulo {
+    text-align: left;
+  }
+
+  .sobre__texto--divisao {
+    border-bottom: 1px solid var(--cinza-escuro);
+    padding-bottom: 1.5rem;
+  }
+
+  .sobre__imagem {
+    display: initial;
+    visibility: initial;
+  }
+}

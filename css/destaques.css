@@ -27,6 +27,7 @@
   max-width: 600px;
   width: 100vw;
 }
+
 .destaques__painel-texto {
   color: var(--fonte-cinza);
   font-weight: 700;
@@ -38,4 +39,23 @@
   color: var(--vermelho-forte);
   border-color: var(--vermelho-forte);
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .destaques__figure {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .destaques__painel {
+    width: 48%;
+  }
+
+  .destaques__painel-img {
+    width: 100%;
+  }
+
+  .destaques__painel-texto {
+    width: 100%;
+  }
 }
